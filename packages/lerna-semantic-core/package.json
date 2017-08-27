@@ -42,7 +42,8 @@
     "url": "https://github.com/aw2basc/lerna-semantic.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo 'lerna-semantic-core'"
   },
   "release": {
     "branch": "master"
@@ -50,5 +51,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.0"
+  "version": "0.4.0"
 }
