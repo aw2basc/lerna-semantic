@@ -1,0 +1,61 @@
+{
+  "name": "lerna-semantic",
+  "description": "boilerplate for lerna-semantic",
+  "author": "aw2basc",
+  "bugs": {
+    "url": "https://github.com/aw2basc/lerna-semantic/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-lerna-changelog/"
+    },
+    "validate-commit-msg": {
+      "helpMessage": "Commit message violates the rules defined for this project. Please, execute `npm run commit` to generate a correct commit message with `commitizen`"
+    }
+  },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
+  "keywords": [
+    "author",
+    "automation",
+    "changelog",
+    "module",
+    "package",
+    "publish",
+    "release",
+    "semver",
+    "version",
+    "lerna"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "commitizen": "^2.9.5",
+    "cz-lerna-changelog": "1.2.1",
+    "eslint": "^3.14.1",
+    "husky": "^0.13.1",
+    "lerna": "2.0.0-beta.34",
+    "lerna-semantic-release": "^9.0.1",
+    "validate-commit-msg": "^2.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aw2basc/lerna-semantic.git"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
+    "postinstall": "lerna bootstrap",
+    "precommit": "npm run lint",
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm run lint && npm run test",
+    "test": "lerna run test",
+    "lint": "eslint packages"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "version": "0.0.0",
+  "private": true
+}

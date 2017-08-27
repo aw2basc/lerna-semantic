@@ -1,0 +1,52 @@
+{
+  "name": "@jmaxwell/lerna-semantic-core",
+  "description": "",
+  "author": "aw2basc",
+  "bugs": {
+    "url": "https://github.com/aw2basc/lerna-semantic/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog/"
+    }
+  },
+  "dependencies": {
+    "@jmaxwell/lerna-semantic-component": "0.0.0",
+    "@jmaxwell/lerna-semantic-utils": "0.0.0"
+  },
+  "peerDependencies": {
+    "lerna": "^2.0.0-beta.31"
+  },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
+  "main": "index.js",
+  "keywords": [
+    "author",
+    "automation",
+    "changelog",
+    "module",
+    "package",
+    "publish",
+    "release",
+    "semver",
+    "version",
+    "lerna"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aw2basc/lerna-semantic.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.0"
+}

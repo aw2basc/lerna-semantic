@@ -1,0 +1,13 @@
+var pino = require("pino")({ timestamp: false, prettyPrint: true });
+
+pino.info("lerna-semantic-core");
+pino.info(require("@jmaxwell/lerna-semantic-utils"));
+pino.info(require("@jmaxwell/lerna-semantic-component"));
+
+/*
+var winston = require("winston");
+
+winston.info("lerna-semantic-core");
+winston.info(require("@jmaxwell/lerna-semantic-utils"));
+winston.info(require("@jmaxwell/lerna-semantic-component"));
+*/
